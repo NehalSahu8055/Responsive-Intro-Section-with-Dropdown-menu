@@ -405,11 +405,15 @@ nav {
   padding-top: var(--wrapper__header-bg-top);
 }
 .header-bg {
+  min-width: 100%;
   object-fit: cover;
   object-position: center;
 
   animation: top-bottom 1s ease-in-out backwards;
   transform-origin: top center;
+}
+.header-bg.mobile {
+  max-width: 100%;
 }
 
 /*---------- Menu--------- */
@@ -668,12 +672,6 @@ nav {
     animation: rtol 1s;
   }
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
 
   /*---------- Navbar--------- */
   nav {
