@@ -429,7 +429,7 @@ nav {
   box-shadow: 0 0 0 100vw var(--dimShadow);
   z-index: 22;
   background-color: var(--backdrop);
-  animation: height 0.4s ease-in-out forwards;
+  animation: height 0.2s ease-in-out forwards;
   transform-origin: top center;
 }
 /* pseudo on menu */
@@ -437,7 +437,7 @@ nav {
   content: "";
   position: absolute;
   top: 0;
-  right: 0.0625rem;
+  right: 0;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(10rem);
@@ -747,7 +747,7 @@ nav {
   .drop-down::before {
     content: "";
     position: absolute;
-    right: 0.0625rem;
+    right: 0;
     width: 100%;
     height: 100%;
     border-radius: 0 0 0.4rem 0.4rem;
@@ -764,7 +764,11 @@ nav {
     gap: 1.1rem;
   }
 
+  .drop1.active {
+    left:10rem;
+  }
   .drop2.active {
+    left:19rem;
     text-align: left;
   }
 
